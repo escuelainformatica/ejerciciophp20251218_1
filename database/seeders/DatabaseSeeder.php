@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Pais;
 use App\Models\Producto;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -24,5 +25,6 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Producto::factory(100)->create();
+        Pais::factory(100)->create();
     }
 }
